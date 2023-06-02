@@ -59,10 +59,10 @@ class taskMenu:
             print('Никого не удалось найти((')
             return False
 
-    def showContacts(self):
+    def showContacts(self) -> None:
         for a in data.dataWork.retDict():
             self.userPrint(a)
 
-    def deleteUser(self, user):
+    def deleteUser(self, user) -> None:
         print('Вы удалили:')
         self.userPrint(data.dataWork.deleteContact(user))
